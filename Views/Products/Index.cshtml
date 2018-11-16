@@ -18,6 +18,7 @@
         <tr>
             <th>Название продукта</th>
             <th>Цена</th>
+            <th>Категория</th>
             <th></th>
         </tr>
     </thead>
@@ -27,6 +28,7 @@
             <tr>
                 <td>@product.Name</td>
                 <td>@product.Price</td>
+                <td>@product.Category.Name</td>
                 <td>
                     <a href="products/@(product.Id)/addToCart" class="btn btn-info">Добавить в корзину</a>
                     <a href="products/edit/@(product.Id)" class="btn btn-info">Редактировать</a>
